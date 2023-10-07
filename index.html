@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>KS RAJESH KUMAR</title>
+</head>
+<style>
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #081b29;
+    color: white;
+}
+
+   @media (min-width:500px) {
+    
+    .intro{
+        margin-top: 8%;
+        margin-left: 6%;
+    }
+    .image{
+        padding: 2%;
+        /* margin-top: 10%; */
+
+    }
+    .continue{
+        margin-left: 6%;
+    }
+    img{
+        margin-left: 8%;
+    }
+   }
+
+nav a{
+        padding: 50px;
+    }   
+.intro{
+        margin-top: 10px;
+        margin-left: 1%;
+    }
+.image{
+        padding: 2%;
+        margin-top: 10%;
+        margin-left: 5%;
+        
+
+    }
+.continue{
+        margin-left: 1%;
+    }
+
+.figdisc{
+    color: yellow;
+}
+
+.social{
+    bottom: 40px;
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+    color: #00abf0;
+}
+.social a{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    color: #00abf0;
+    background: transparent;
+    border:  2px solid #00abf0;
+    border-radius: 50%;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+}
+.social a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background:#00abf0;
+    z-index: -1;
+    transition: .2s;
+    overflow: hidden;
+    z-index: -1;
+    color: #081b29;
+}
+.social a:hover{
+    color: #081b29;
+}
+.social a:hover::before{
+    width: 100%;
+
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    padding: 20px;
+}
+
+.card-group .card-text{
+    background-color: skyblue;
+}
+.contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact2{
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.card:hover{
+    transform: scale(1.03);  
+    box-shadow: 0 4px 8px rgb(109, 240, 240);
+}
+
+.card a:hover{
+    color: rgb(27, 160, 94);
+}
+p{
+    text-align: justify;
+}
+
+#contactDetails{
+    transform: scale(1);  
+    box-shadow:none;
+} 
+
+#thanking{
+    margin-top: 3%;
+    text-align: center;
+    color: cyan;
+
+}
+</style>
+<body>
+    <nav class="navbar text-white bg-black navbar-dark navbar-expand-md">
+        <div class="container">
+            <a href="#" class="navbar-brand">K S RAJESH KUMAR</a>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="nav">
+                <ul class="navbar-nav p-3">
+                    <hr>
+                    <!-- <li class="nav-item"><a href="#" class="nav-link link-info p-3">HOME</a></li> -->
+                    <li class="nav-item"><a href="#about" class="nav-link link-info p-3" >ABOUT</a></li>
+                    <li class="nav-item"><a href="#skills" class="nav-link link-info p-3" >SKILLS</a></li>
+                    <li class="nav-item"><a href="#certifications" class="nav-link link-info p-3" >CERTIFICATIONS</a></li>
+                    <li class="nav-item"><a href="#projects" class="nav-link link-info p-3 " >PROJECTS</a></li>
+                    <li class="nav-item"><a href="#experience" class="nav-link link-info p-3">EXPERIENCE</a></li>
+                    <li class="nav-item"><a href="https://drive.google.com/file/d/1-9CRuUut1gx0H_GBb9aWPdX9pXn7wQKq/view?usp=drive_link" target="_blank" class="nav-link link-info p-3" >RESUME</a></li>
+                    <li class="nav-item"><a href="#social" class="nav-link link-info p-3" >CONTACT</a></li>
+    
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container p-2 home">
+        <div class="row">
+            <div class="col col-md-7 col-12 intro" id="about">
+                <h1>Hi, I'm KS Rajesh Kumar</h1> <br> 
+                <p>  I am currently pursuing B.E in <b>Information Science Engineering</b> at <b>Jawaharlal Nehru New College of Engineering in Shimoga, Karnataka</b>.</p>
+        
+                <p>In addition to my academic pursuits, I have also taken the initiative to enhance my skills through various courses. These experiences have further fueled my passion for programming.</p>
+               <p>
+                I have a diverse skill set with proficiency in multiple programming languages such as <b style="color: yellow;">C, C++, Java, and Python</b>. Additionally, I am well-versed in web development technologies including <b style="color: yellow;">HTML, CSS, JavaScript, Bootstrap, and PHP</b>, as well as databases like <b style="color:yellow;">MySQL</b> and <b style="color: yellow;">Oracle 10g</b>. I also have experience with big data processing using <b style="color: yellow;">PySpark</b>. This versatility allows me to address various facets of software development and adapt to different technological environments professionally.   </p>   
+                <p>  Furthermore, I am fluent in three languages: <b>Kannada, English, and Hindi</b>. This linguistic proficiency, combined with excellent communication and interpersonal skills, allows me to effectively collaborate with individuals from diverse backgrounds.
+                </p> 
+            </div>
+
+            <div class="col col-md-4 image">
+                    <img style="border-radius: 50%" src="https://drive.google.com/uc?id=1o5TBY1z7FozIKlGxHdV6_PTM5OlfXeol" alt="no image" width=90% height="100%">
+            </div>
+
+        </div>
+
+    <div class="row">
+        <div class="col continue col-md-7">
+          
+        <p>
+            I consider myself a fast learner, adept at managing my time efficiently and handling multiple tasks simultaneously. I possess strong troubleshooting and problem-solving skills, approaching challenges with an analytical mindset. Keeping up with the latest advancements in technology is a particular interest of mine, as I am driven by the opportunity to work with cutting-edge technologies.
+               
+        </p> 
+        <p>
+            In conclusion, <b>I am passionate about programming and aspire to build my career in this field. I am eager to leverage my skills, knowledge, and enthusiasm to contribute to the ever-evolving world of technology.</b> </p>
+    
+        </div>
+    </div>
+    </div>
+<br>
+<hr>
+<br>
+
+    <div class="container" id="skills" >
+       <h3 class="m-2">SKILLS</h3> 
+       
+       <div class="card-group">
+        <div class="card border border-dark border-3 rounded-5 ms-2 me-2 m-2 mb-3">
+            <div class="card-body">
+                <div class="card-title"><h3 class="text-primary">PROGRAMMING LANGUAGES</h3></div>
+                <div class="card-text  border rounded-4 p-2 m-2">
+                    <h4><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" height="30" alt="c logo"  />&nbsp;C</h4>
+                    <h4><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" height="30" alt="cplusplus logo"  />&nbsp;C++</h4>
+                    <h4><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" height="30" alt="java logo"  />&nbsp;CORE JAVA</h4>
+                    <h4> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="30" alt="python logo"  />&nbsp;PYTHON</h4>
+                </div>
+            </div>
+        </div>
+    
+        <div class="card border border-dark border-3 rounded-5 ms-2 me-2 m-2 mb-3">
+            <div class="card-body">
+                <div class="card-title"><h3 class="text-primary">WEB DEVELOPMENT</h3></div>
+                <div class="card-text border rounded-4 p-2 m-2">
+                    <h4><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="30" alt="html5 logo"  />&nbsp;HTML</h4>
+                    <h4><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="30" alt="css3 logo"  />&nbsp;CSS</h4>
+                    <h4><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="30" alt="javascript logo"  />&nbsp;JAVASCRIPT</h4>
+                    <h4>  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" height="30" alt="bootstrap logo"  />&nbsp;BOOTSTRAP</h4>
+                    <h4>  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" height="30" alt="php logo"  />&nbsp;PHP</h4>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="card border border-dark border-3 rounded-5 ms-2 me-2 m-2 mb-3">
+            <div class="card-body">
+                <div class="card-title"><h3 class="text-primary">DATABASE</h3></div>
+                <div class="card-text border rounded-4 p-2 m-2">
+                    <h4 > <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" height="30" alt="mysql logo"  />&nbsp;MySQL</h4>
+                    <h4 > <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oracle/oracle-original.svg" height="30" alt="oracle logo"  />&nbsp;Oracle 10g</h4>     
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="card-title"><h3 class="text-primary">BIG DATA</h3></div>
+                <div class="card-text border rounded-4 p-2 m-2">
+                    <h4 >PySpark</h4>    
+                </div>
+            </div>
+        </div>
+
+        <div class="card border border-dark border-3 rounded-5 ms-2 me-2 m-2 mb-3">
+            <div class="card-body">
+                <div class="card-title"><h3 class="text-primary">OTHER TOOLS</h3></div>
+                <div class="card-text border rounded-4 p-2 m-2">
+                    <h4 ><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" height="30" alt="github logo"  />&nbsp;GIT</h4>
+                    <h4><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/xamarin/xamarin-original.svg" height="40" alt="xamarin logo"  />&nbsp;XAMPP</h4>
+                    
+                </div>
+            </div>
+        </div>
+
+       </div>
+
+
+    </div>
+
+<br>
+<hr>
+<br>
+    <div class="container" id="certifications">
+        <h2>CERTIFICATIONS</h2>
+        
+        <div class="card border border-dark border-3 rounded-5 ms-2 me-2 m-2 mb-3">
+            <div class="card-body">
+                <div class="card-text text-primary p-2 m-2">
+                    <a href="https://files.codingninjas.in/certi_image445680404e4794a807a5fde6f69ec58a73b80d.jpg" target="_blank"><h4>Basics of C++, Coding Ninjas.</h4></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card border border-dark border-3 rounded-5 ms-2 me-2 m-2 mb-3">
+            <div class="card-body">
+                <div class="card-text text-primary p-2 m-2">
+                    <a href="https://coursera.org/share/5cf8cc01c44709b62099a7b66ba0df6d" target="_blank"><h4>Crash Course on Python, Coursera.</h4></a>
+                </div>
+            </div>
+        </div>
+
+            <div class="card border border-dark border-3 rounded-5 ms-2 me-2 m-2 mb-3">
+                <div class="card-body">
+                    <div class="card-text text-primary p-2 m-2">
+                        <a href="https://www.credly.com/badges/b6e835af-f4b8-44be-b7dc-f54332de24eb/public_url" target="_blank"><h4>JavaScript Essentials 1, Cisco Networking Academy.</h4></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card border border-dark border-3 rounded-5 ms-2 me-2 m-2 mb-3">
+                <div class="card-body">
+                    <div class="card-text text-primary p-2 m-2">
+                        <a href="https://coursera.org/share/4b05948ac9151607dad3af9b3f9fa299" target="_blank"><h4>Linux for Developers, Coursera.</h4></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="card border border-dark border-3 rounded-5 ms-2 me-2 m-2 mb-3">
+                <div class="card-body">
+                    <div class="card-text text-primary p-2 m-2">
+                        <a href="https://www.credly.com/badges/ec538349-bad2-41d1-b171-c4f16272f241/public_url" target="_blank"><h4>Python for Data Science, IBM.</h4></a>
+                    </div>
+                </div>
+            </div> -->
+    </div>
+    <br>
+<hr>
+
+<div class="container" id="projects">
+    <h2>PROJECTS</h2>
+<br>
+    <div class="card-group">
+
+        <div class="card border border-dark border-3 rounded-5 ms-2 me-2 m-2 mb-3 projectDescription" >
+            <div class="card-body">
+                <div class="card-text text-primary p-2 m-2" style="background-color: white;">
+                    <img src="https://drive.google.com/uc?id=1zQ7dg4RLDcszu7DXSzOVnZp-zMQyNgrb" alt="NO IMAGE" width="300">
+                    <a href="https://github.com/K-S-RAJESH-KUMAR/online_quiz_web_application" target="_blank"><h4>Online Quiz Web Application.</h4></a>
+                    <p style="color: black;">
+                        Online Quiz Web Application is designed for conducting exams online. The system aims to efficiently evaluate students with automation, reducing time and ensuring accurate results. <br>
+                        Used  <b>HTML, CSS, JAVASCRIPT, PHP </b>and <b>MySQL</b>.
+                    </p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="card border border-dark border-3 rounded-5 ms-2 me-2 m-2 mb-3 projectDescription">
+            <div class="card-body">
+                <div class="card-text text-primary p-2 m-2" style="background-color: white;">
+                    <img src="https://drive.google.com/uc?id=1jAeHm0P4icv89qFwT0-dr2vKvWtoN3N9" alt="NO IMAGE" width="300">
+                    <a href="https://github.com/K-S-RAJESH-KUMAR/PasswordManager" target="_blank"><h4>Password Manager.</h4></a>
+                    <p style="color: black;">
+                        Password Manager is a user-friendly Java Swing application that securely stores and manages account passwords in a MySQL database, accessible only after successful authentication.
+                       <br> Used <b>Java</b> and <b>MySQL</b>.
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <br>
+</div>
+
+<hr>
+<div class="container" id="experience">
+    <h2>EXPERIENCE</h2>
+<br>
+    <div class="card border border-dark border-3 rounded-5 ms-2 me-2 m-2 mb-3 projectDescription">
+        <div class="card-body">
+            <div class="card-text text-primary p-2 m-2" style="background-color: white;">
+                <a href="https://drive.google.com/file/d/1yZ7y1HjRx5xPI1VJRiRbROF55boC-6oo/view" target="_blank"><h4>Big Data Intern, Ekathva Innovations</h4></a>
+                <p style="color: black;">
+                        Worked on the project titled "Big Data Science operations
+                        and Machine Learning on Video Games sales using
+                        Advanced Python APIs". I gained proficiency in
+                       <b>PySpark</b> and <b>Matplotlib</b>. This
+                        experience has provided me with insights into recent
+                        technology trends and industry practices.
+                </p>
+            </div>
+        </div>
+    </div>
+
+</div>
+<br>
+
+<br>
+<hr>
+        <h4><p id="thanking">Thank you for your attention, and I look forward to engaging in exciting opportunities ahead.</p></h4>
+
+
+<br>
+<br>
+    <div class="container">
+        <h2 class="ms-3">CONTACT</h2><br>
+    </div>
+    <div class="container contact">
+        
+        <div class="social" id="social">
+            <a href="mailto:ksrajeshkumar2002@gmail.com"><i class='bx bxl-gmail'></i></a>
+            <a href="https://www.linkedin.com/in/ksrajeshkumar"><i class='bx bxl-linkedin' ></i></a>
+            <a href="https://github.com/K-S-RAJESH-KUMAR"><i class='bx bxl-github'></i></a>
+            <a href="tel:+919113027398"><i class='bx bxs-phone-call' ></i></a>
+        </div>
+    </div>
+
+        <div class="card border border-0   ms-md-5 ps-md-4 contact2" id="contactDetails">
+            <div class="card-body">
+                <div class="card-text text-secondary p-2 m-2">
+                    <h6>Name: KS RAJESH KUMAR</h6>
+                    <h6>E-mail: ksrajeshkumar2002@gmail.com</h6>
+                    <h6>Phone: +919113027398</h6>
+                    <h6>Linkdin: https://www.linkedin.com/in/ksrajeshkumar</h6>
+                    <h6>Git: https://github.com/K-S-RAJESH-KUMAR</h6>
+                </div>
+            </div>
+        </div>
+</body>
+</html>
