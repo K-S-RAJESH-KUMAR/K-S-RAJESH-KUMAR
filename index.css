@@ -1,0 +1,137 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #081b29;
+    color: white;
+}
+
+   @media (min-width:500px) {
+    
+    .intro{
+        margin-top: 8%;
+        margin-left: 6%;
+    }
+    .image{
+        padding: 2%;
+    }
+    .continue{
+        margin-left: 6%;
+    }
+    img{
+        margin-left: 8%;
+    }
+   }
+
+nav a{
+        padding: 50px;
+    }   
+.intro{
+        margin-top: 10px;
+        margin-left: 1%;
+    }
+.image{
+        padding: 2%;
+        margin-top: 10%;
+        margin-left: 5%;
+        
+
+    }
+.continue{
+        margin-left: 1%;
+    }
+
+.figdisc{
+    color: yellow;
+}
+
+.social{
+    bottom: 40px;
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+    color: #00abf0;
+}
+.social a{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    color: #00abf0;
+    background: transparent;
+    border:  2px solid #00abf0;
+    border-radius: 50%;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+}
+.social a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background:#00abf0;
+    z-index: -1;
+    transition: .2s;
+    overflow: hidden;
+    z-index: -1;
+    color: #081b29;
+}
+.social a:hover{
+    color: #081b29;
+}
+.social a:hover::before{
+    width: 100%;
+
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    padding: 20px;
+}
+
+.card-group .card-text{
+    background-color: skyblue;
+}
+.contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact2{
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.card:hover{
+    transform: scale(1.03);  
+    box-shadow: 0 4px 8px rgb(109, 240, 240);
+}
+
+.card a:hover{
+    color: rgb(27, 160, 94);
+}
+p{
+    text-align: justify;
+}
+
+#contactDetails{
+    transform: scale(1);  
+    box-shadow:none;
+} 
+
+#thanking{
+    margin-top: 3%;
+    text-align: center;
+    color: cyan;
+
+}
