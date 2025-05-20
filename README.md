@@ -2,7 +2,7 @@
 
 ###
 
-<p align="left">I am currently pursuing B.E in Information Science Engineering at Jawaharlal Nehru New College of Engineering in Shimoga, Karnataka.</p>
+<p align="left">I'm a Systems Engineer at TCS with a strong passion for programming and technology. I hold a Bachelor's degree in Information Science and Engineering from Jawaharlal Nehru National College of Engineering, graduated in 2024.</p>
 
 ###
 
